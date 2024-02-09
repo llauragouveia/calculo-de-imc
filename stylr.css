@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(239, 121, 243);
+
+
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+button{
+
+background-color: rgb(255, 3, 242);
+border-radius: 20px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover{
+
+background-color: rgb(217, 58, 188);
+
+}
+input{
+
+border-radius: 20px; 
+padding: 10px 10px;
+border: none;   
+}

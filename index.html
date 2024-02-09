@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylr.css">
+    <link rel="stylesheet" href="./objeto.js">
+</head>
+<body>
+    
+    <center> <h1 >IMC</h1>
+        <h3>Altura</h3>
+        <input>
+        <h3>Peso</h3>
+        <input> <br>
+        <br>
+        <button id="buto"> calcule</button>
+    </center>
+    <script>
+        function calcularIMC (){
+            ver peso=parseFloat(document.getElementById("peso").value);
+            ver altura=parseFloat(Document.getElementById("altua").value);
+            
+            if(isNaN(peso)|| isNaN(altura)|| peso <= 0 || altura <=0){
+                document.getElementById("resultado").textContent="Por favor, insira valores validos para peso e altura";
+
+            }else{
+                var imc = peso/(altura*altura);
+                document.getElementById("resultado").textContent="Seu imc é:"+ imc.toFixed(2);
+            }    
+     }
+    </script>
+
